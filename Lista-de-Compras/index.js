@@ -24,6 +24,13 @@ btn_salvar.addEventListener("click", (evento)=>{
         elemento.appendChild(item_novo);
         item_novo.appendChild(checkbox);
         item_novo.appendChild(nomeItem);
+
+        const dia_semana= new Date().toLocaleDateString("pt-BR", {weekday: "long", day: "numeric", month:"2-digit", year: "numeric", hour:"2-digit", minute:"2-digit"} );
+        console.log(dia_semana);
         
+        var data = document.createElement("p");
+        data.classList.add("texto-data");
+        data.innerText=dia_semana;
+        elemento.appendChild(data);
     }
 })
