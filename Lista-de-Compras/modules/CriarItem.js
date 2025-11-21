@@ -1,3 +1,4 @@
+import gerarData from "./gerarData.js";
 export function criarItem(valor){
         var elemento = document.createElement("li");      
         var item_novo= document.createElement("div");
@@ -28,12 +29,7 @@ export function criarItem(valor){
 
         //Inserindo data e hora
 
-        const dia_semana= new Date().toLocaleDateString("pt-BR", {weekday: "long", day: "numeric", month:"2-digit", year: "numeric", hour:"2-digit", minute:"2-digit"} );
-        console.log(dia_semana);
-        
-        var data = document.createElement("p");
-        data.classList.add("texto-data");
-        data.innerText=dia_semana;
+        const data= gerarData();
         elemento.appendChild(data);
         
         return elemento;
