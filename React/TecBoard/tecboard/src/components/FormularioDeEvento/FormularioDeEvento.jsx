@@ -1,5 +1,6 @@
-import { TituloFormulario } from "./TituloFormulario.jsx";
-import { ElementoFormulario } from "./ElementoFormulario.jsx";
+import { TituloFormulario } from "../TituloFormulario/TituloFormulario.jsx";
+import { ElementoFormulario } from "../ElementoFormulario/ElementoFormulario.jsx";
+import './formulario-de-evento.css'
 
 //function ElementoFormulario({children, htmlFor}) 
 export function FormularioDeEvento() {
