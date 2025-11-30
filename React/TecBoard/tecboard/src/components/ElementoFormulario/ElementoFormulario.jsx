@@ -1,14 +1,15 @@
 import { Input } from "../Input/Input.jsx";
-export function ElementoFormulario(props) {
+import './elemento-formulario.css'
+export function ElementoFormulario({children, htmlFor, type="text", placeholder}) {
     return (
-        <fieldset>
-            <label htmlFor={props.htmlFor}>
-                {props.children}
+        <fieldset className="elemento-form">
+            <label className='label-form' htmlFor={htmlFor}>
+                {children}
             </label>
             <Input
-                type="text"
-                id='nome'
-                placeholder='Summer dev hits' />
+                type={type}
+                // id={id}
+                placeholder={placeholder} />
         </fieldset>
     )
 }
