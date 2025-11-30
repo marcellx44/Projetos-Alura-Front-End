@@ -23,9 +23,11 @@ export function FormularioDeEvento() {
       <ElementoFormulario htmlFor="tema-evento" type="text" placeholder="Selecione uma opção">
         Tema evento:
       </ElementoFormulario>
-      <BotaoFormulario id="btn-form">
-        Criar evento
-      </BotaoFormulario>
+      <div className="container-botao-form">
+        <BotaoFormulario id="btn-form">
+          Criar evento
+        </BotaoFormulario>
+      </div>
     </form>
   )
 }
