@@ -1,5 +1,6 @@
 import { TituloFormulario } from "../TituloFormulario/TituloFormulario.jsx";
 import { ElementoFormulario } from "../ElementoFormulario/ElementoFormulario.jsx";
+import  {BotaoFormulario}  from "../Botao/BotaoFormulario.jsx";
 import './formulario-de-evento.css'
 
 //function ElementoFormulario({children, htmlFor}) 
@@ -22,6 +23,9 @@ export function FormularioDeEvento() {
       <ElementoFormulario htmlFor="tema-evento" type="text" placeholder="Selecione uma opção">
         Tema evento:
       </ElementoFormulario>
+      <BotaoFormulario id="btn-form">
+        Criar evento
+      </BotaoFormulario>
     </form>
   )
 }
