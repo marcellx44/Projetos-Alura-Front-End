@@ -9,13 +9,16 @@ header{
   display: flex;
   justify-content: center;
 }
-section{
+.section-banner{
   background-image: linear-gradient(to top, #06151A, #17D9B1 );
   display: flex;
   justify-content: center;
 }
 
-section>img{
+.section-banner>img{
   max-width:90%;
 }
 
+.section-tema{
+  color:white;
+}
