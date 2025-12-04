@@ -37,11 +37,13 @@ function App() {
         <img src="/banner.png" alt="" />
       </section>
       <FormularioDeEvento />
-      <section>
+      <section className='container-tema'>
         {temas.map(tema=>(
-          <Tema tema={tema}>
-            {tema.nome}
-          </Tema>
+          <section className='section-tema' key={tema.id}>
+            <Tema tema={tema} >
+              {tema.nome}
+            </Tema>
+          </section>
         ))}
       </section>
     </main>
