@@ -1,6 +1,6 @@
 import './App.css';
 import { FormularioDeEvento } from "./components/FormularioDeEvento/FormularioDeEvento.jsx";
-import { Tema } from "./components/Tema/Tema.jsx";
+import { Tema } from "../src/components/Tema/Tema.jsx";
 function App() {
   const temas = [
     {
@@ -39,9 +39,9 @@ function App() {
       <FormularioDeEvento />
       <section>
         {temas.map(tema=>(
-          <div className='section-tema'>
+          <Tema tema={tema}>
             {tema.nome}
-          </div>
+          </Tema>
         ))}
       </section>
     </main>
