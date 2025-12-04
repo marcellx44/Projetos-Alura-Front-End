@@ -1,0 +1,29 @@
+.container-card{
+    display:flex;
+    flex-direction:column;
+    background-color: #212121;
+    width: 282px;
+    font-family: "Orbitron";
+}
+
+.conteudo-card{
+    margin:0px;
+    padding: 24px 16px;
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+
+}
+.conteudo-nome{
+    background-color: #4A4949;
+    border-radius:4px;
+    font-family: "Orbitron";
+    padding:8px;
+}
+.conteudo-card>p{
+    margin:0px;
+}
+.conteudo-card>h4{
+    margin:0px;
+    font-family: "Orbitron";
+}
