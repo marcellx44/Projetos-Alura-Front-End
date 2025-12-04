@@ -2,7 +2,8 @@ import './input.css'
 export function Input(props) {
    if(props.type==='submit'){
         return(
-            <select className='input-form'>
+            <select className='input-form' defaultValue="selecione">
+                <option value="selecione" disabled hidden>Selecione um tema</option>
                 <option value="front-end">front-end</option>
                 <option value="back-end">back-end</option>
                 <option value="devops">devops</option>
