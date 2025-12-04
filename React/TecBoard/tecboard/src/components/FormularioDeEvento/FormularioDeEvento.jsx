@@ -20,7 +20,7 @@ export function FormularioDeEvento() {
         placeholder="DD/MM/AAA">
         Data do Evento
       </ElementoFormulario>
-      <ElementoFormulario htmlFor="tema-evento" type="text" placeholder="Selecione uma opção">
+      <ElementoFormulario htmlFor="tema-evento" type="submit" placeholder="Selecione uma opção">
         Tema evento:
       </ElementoFormulario>
       <div className="container-botao-form">
