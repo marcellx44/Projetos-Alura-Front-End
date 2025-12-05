@@ -15,6 +15,13 @@ export function FormularioDeEvento() {
         Qual é o nome do evento?
       </ElementoFormulario>
       <ElementoFormulario
+        htmlFor="endereço"
+        type="text"
+        placeholder="Copie a URL aqui"
+      >
+        Qual o endereço da imagem de capa?
+      </ElementoFormulario>
+      <ElementoFormulario
         htmlFor="data"
         type="date"
         placeholder="DD/MM/AAA">
