@@ -2,9 +2,9 @@ import { useState } from 'react'
 import './App.css'
 
 function Contador(){
-  const [count, setCount]= useState(0);
+  const [count, funcao_atualizar]= useState(0);
   function Click(){
-    setCount(count + 1);
+    funcao_atualizar(count + 1);
   }
   return(
     <>
