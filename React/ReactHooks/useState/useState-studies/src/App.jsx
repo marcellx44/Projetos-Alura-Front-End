@@ -2,10 +2,9 @@ import { useState } from 'react'
 import './App.css'
 
 function Contador(){
-  let count =0;
+  const [count, setCount]= useState(0);
   function Click(){
-    count++;
-    console.log(count);
+    setCount(count + 1);
   }
   return(
     <>
