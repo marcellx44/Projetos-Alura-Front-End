@@ -8,7 +8,7 @@ export default function TodoList() {
 
   return (
     <>
-      <input onChange={(elemento) =>{
+      <input value={valorAtual} onChange={(elemento) =>{
         setValorAtual(elemento.target.value)
         console.log(valorAtual);
       }}
@@ -16,6 +16,7 @@ export default function TodoList() {
        />
       <button onClick={() => {
         setTodos([...todos, {id: todos.length, text:valorAtual}]);
+        setValorAtual('')
       }}>Add</button>
       <ul>
         {todos.map(item => (
