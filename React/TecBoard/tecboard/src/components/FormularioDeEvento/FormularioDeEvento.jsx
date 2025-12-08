@@ -9,7 +9,7 @@ export function FormularioDeEvento({temas}) {
     const evento={
         capa: formData.get('capa'),
         tema: temas.find(function (item){
-          return item.id == formData.get('tema')
+          return item.id === formData.get('tema')
         }),
         data: new Date(formData.get('tema')),
         titulo: formData.get('titulo')
