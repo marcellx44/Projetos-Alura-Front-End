@@ -4,9 +4,20 @@ import  {BotaoFormulario}  from "../Botao/BotaoFormulario.jsx";
 import './formulario-de-evento.css'
 
 //function ElementoFormulario({children, htmlFor}) 
-export function FormularioDeEvento() {
+export function FormularioDeEvento({temas}) {
+  function FormSubmetido(formData){
+    const evento={
+        capa: formData.get('capa'),
+        tema: temas.find(function (item){
+          return item.id == formData.get('tema')
+        }),
+        data: new Date(formData.get('tema')),
+        titulo: formData.get('titulo')
+    }
+    console.log(evento);
+  }
   return (
-    <form className='form-evento'>
+    <form className='form-evento' action={FormSubmetido}>
       <TituloFormulario>Preencha para criar um evento:</TituloFormulario>
       <ElementoFormulario
         htmlFor="nome"
