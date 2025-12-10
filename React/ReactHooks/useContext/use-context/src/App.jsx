@@ -17,6 +17,11 @@ function App() {
         <Heading>Sub-sub-heading</Heading>
         <Heading>Sub-sub-heading</Heading>
       </Section>
+      <Section level={2}>
+        <Heading>Sub-sub-heading</Heading>
+        <Heading>Sub-sub-heading</Heading>
+        <Heading>Sub-sub-heading</Heading>
+      </Section>
     </>
   )
 }
