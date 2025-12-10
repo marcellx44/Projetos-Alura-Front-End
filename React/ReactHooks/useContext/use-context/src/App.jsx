@@ -1,20 +1,18 @@
-import { useContext } from 'react'
 import './App.css'
-import { LevelContext } from "../context/LevelContext.jsx";
-import Heading from '../components/Section/Section.jsx';
-import Section from '../components/Heading/Heading.jsx';
+import Heading from '../components/Heading/Heading.jsx';
+import Section from '../components/Section/Section.jsx';
 
 function App() {
 
   return (
     <>
-      <Section>
+      {/* <Section>
         <Heading level={4}>Sub-sub-heading</Heading>
         <Heading level={4}>Sub-sub-heading</Heading>
         <Heading level={4}>Sub-sub-heading</Heading>
-      </Section>
+      </Section> */}
 
-      <Section level={4}>
+      <Section level={3}>
         <Heading>Sub-sub-heading</Heading>
         <Heading>Sub-sub-heading</Heading>
         <Heading>Sub-sub-heading</Heading>
